@@ -1,36 +1,31 @@
 {
-  "name": "test-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.8.3",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
-  },
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "src",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node -r esm ./src/bin/index.js",
+    "dev": "nodemon -r esm ./src/bin/index.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "bodymen": "^1.1.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "mongoose": "^5.8.7",
+    "morgan": "^1.9.1",
+    "querymen": "^2.1.3"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
+    "@babel/register": "^7.8.0",
+    "nodemon": "^2.0.2"
   }
 }
